@@ -1,0 +1,409 @@
+:root {
+    --DarkBackground: #0E182D;
+    --DarkBlue: #121F38;
+    --SkyBlue: #0EA6E9;
+    --OceanBlue: #0BCFD2;
+}
+
+.display-3 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.secH {
+    font-size: 45px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.therdH {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.fourthH {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@media only screen and (min-width: 1920px) {
+    .Home .Intro {
+        width: 50%;
+    }
+
+    .Home .row {
+        justify-content: center;
+    }
+
+    .Services .col-lg-7 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .display-3 {
+        font-size: 3rem;
+    }
+
+    .Services .leftText {
+        padding: 10%;
+        padding-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    aside {
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-wrap: nowrap;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbarToggleBtn {
+        display: block;
+    }
+
+    .navCloseBtn {
+        display: block;
+    }
+
+    .slideNav {
+        transform: translateX(0%);
+    }
+
+    main.scrollspy-example {
+        width: 100%;
+    }
+
+    .Services .leftText {
+        background: linear-gradient(90deg, #0E182D 0.01%, rgba(22, 39, 72, 0.97) 38.64%, rgba(22, 40, 73, 1.00) 63.77%, #162849 102.57%) no-repeat left center;
+        background-size: cover;
+        border-end-end-radius: 40%;
+        border-start-end-radius: 60%;
+        border-start-start-radius: 50% 60px;
+        border-end-start-radius: 50% 40px;
+        filter: drop-shadow(16px 10px 20px rgba(0, 58, 170, 0.37));
+    }
+
+
+
+    .Services .rightText {
+        background: linear-gradient(-90deg, #0E182D 0.01%, rgba(22, 39, 72, 0.97) 38.64%, rgba(22, 40, 73, 1.00) 63.77%, #162849 102.57%) no-repeat left center;
+        background-size: cover;
+        border-end-end-radius: 50% 60px;
+        border-start-end-radius: 50% 40px;
+        border-start-start-radius: 65%;
+        border-end-start-radius: 40%;
+        filter: drop-shadow(-16px 10px 20px rgba(0, 58, 170, 0.50));
+    }
+
+}
+
+@media (max-width: 1199.98px) {
+    .secH {
+        font-size: 30px;
+    }
+
+    .therdH {
+        font-size: 24px;
+    }
+
+    .fourthH {
+        font-size: 18px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .Services .rightText {
+        padding: 12%;
+
+    }
+
+    .About ul {
+        gap: 24px;
+    }
+
+    .NavActive {
+        position: absolute;
+        height: 55px;
+        width: 200px;
+    }
+
+    #simple-list-example a:nth-child(1).active~.NavActive {
+        transform: translateY(calc(1* 1px));
+        opacity: 1;
+    }
+
+    #simple-list-example a:nth-child(2).active~.NavActive {
+        transform: translateY(calc(55.5* 1px));
+        opacity: 1;
+    }
+
+    #simple-list-example a:nth-child(3).active~.NavActive {
+        transform: translateY(calc(55.5* 2px));
+        opacity: 1;
+    }
+
+    #simple-list-example a:nth-child(4).active~.NavActive {
+        transform: translateY(calc(55.5* 3px));
+        opacity: 1;
+    }
+
+    #simple-list-example a:nth-child(5).active~.NavActive {
+        transform: translateY(calc(55.5* 4px));
+        opacity: 1;
+    }
+
+    #simple-list-example a:nth-child(6).active~.NavActive {
+        transform: translateY(calc(55.5* 5px));
+        opacity: 1;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+
+    .Home>.row {
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+
+    .Profilepic1 {
+        display: table;
+        margin: auto;
+        width: 40%;
+    }
+
+    .Profilepic1 img {
+        transform: translateY(0%);
+    }
+
+    .Profilepic1::before {
+        top: 31px;
+    }
+
+    .Profilepic1 span {
+        left: 89%;
+    }
+
+    .Profilepic1::after {
+        left: 52%;
+        top: -22px;
+    }
+
+    .Profilepic1 span::after {
+        top: -98px;
+    }
+
+    .cardBubble::after {
+        content: url(../image/Bubbble.svg);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 99.99%;
+        display: none;
+    }
+
+    .cardBubble {
+        margin-right: 0;
+        border-radius: 40px;
+    }
+
+    .About .Profilepic2 {
+        display: table;
+        margin: auto;
+        width: 40%;
+    }
+
+    .About>.row {
+        row-gap: 40px;
+    }
+
+    .Services>.row {
+        row-gap: 40px;
+        margin-top: 40px;
+    }
+
+    .Services>.row.rowLeft {
+        flex-direction: column-reverse;
+    }
+
+    .Services .col-lg-4 img {
+        display: table;
+        margin: auto;
+        width: 40%;
+    }
+
+    .textDecore.secH {
+        font-size: 70px;
+    }
+
+    .textDecore span {
+        font-size: 30px;
+    }
+
+    .Contacts>.row:not(.row.ContactInfo) {
+        row-gap: 40px;
+    }
+
+    .Contacts .backIllustraition {
+        display: table;
+        margin: auto;
+        width: 60%;
+    }
+}
+
+@media (max-width: 767.98px) or (max-width: 768px) {
+    .Services .col-lg-4 img {
+        display: table;
+        margin: auto;
+        width: 60%;
+    }
+
+    .Contacts .circle .secH {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .Contacts .Thanks {
+        font-size: calc(8rem + 0.590625vw);
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    .secH {
+        font-size: 28px;
+    }
+
+    .therdH {
+        font-size: 22px;
+    }
+
+    .fourthH {
+        font-size: 18px;
+    }
+
+    .resumeStatus {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .Profilepic1 span::after {
+        content: url(../image/Polygon2.svg);
+        top: -107px;
+        left: -25px;
+    }
+
+    .DefaultPadding {
+        padding: 40px 0;
+    }
+
+    .Contacts .circle .secH {
+        width: auto;
+        margin: 0 auto;
+        font-size: 22px;
+    }
+
+    .Contacts .Thanks {
+        font-size: calc(5rem + 0.590625vw);
+    }
+
+    .textDecore.secH {
+        font-size: 50px;
+    }
+
+    .textDecore span {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-height: 540px){
+    .Home {
+        height: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .Home>.row {
+        flex-direction: column-reverse;
+        row-gap: 15px;
+    }
+
+    .About .col-lg-8 {
+        padding-left: 12px;
+    }
+
+    .AboutTextCard {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .About ul {
+        gap: 12px;
+    }
+
+    .textDecore.secH {
+        font-size: 45px;
+    }
+
+    .textDecore span {
+        font-size: 24px;
+    }
+
+    .Contacts .circle .secH {
+        width: auto;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .Contacts .Thanks {
+        font-size: calc(3rem + 0.590625vw);
+    }
+
+    .Services .textpart {
+        border-radius: 30px;
+    }
+
+}
+
+
+
+@media (max-width: 430px) {
+    .About a.Mybtn:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .ContactInfo .col-auto a {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        color: #fff;
+    }
+
+    .ContactInfo .col-auto:not(.ContactInfo .col-auto.socialMediaLinks) {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,1044 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Bold.woff2') format('woff2'),
+        url('../fonts/Kanit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Kanit-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Black.woff2') format('woff2'),
+        url('../fonts/Kanit-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Medium.woff2') format('woff2'),
+        url('../fonts/Kanit-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-SemiBold.woff2') format('woff2'),
+        url('../fonts/Kanit-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Regular.woff2') format('woff2'),
+        url('../fonts/Kanit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arizonia';
+    src: url('../fonts/Arizonia-Regular.woff2') format('woff2'),
+        url('../fonts/Arizonia-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kanit';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    background-color: var(--DarkBackground);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+.display-3 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.secH {
+    font-size: 45px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.therdH {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.fourthH {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --DarkBackground: #0E182D;
+    --DarkBlue: #121F38;
+    --SkyBlue: #0EA6E9;
+    --OceanBlue: #0BCFD2;
+}
+
+.Mybtn {
+    display: inline-block;
+    padding: 15px 20px;
+    font-family: 'Kanit';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #0ea6e9, #0bcfd2, #0ea6e9);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    border-radius: 50px;
+    border: none;
+    color: var(--DarkBackground);
+    transition: background-position-x 0.3s ease-in-out;
+}
+
+.Mybtn:hover {
+    background-position-x: 100%;
+    color: var(--DarkBackground);
+}
+
+.Mybtn:active {
+    scale: 0.9;
+}
+
+main {
+    background: url('../image/Background1.svg') no-repeat top right;
+    background-size: 100%;
+}
+
+
+.DefaultPadding {
+    padding: 70px 0;
+}
+
+.navbarToggleBtn{
+    background-color: var(--DarkBackground);
+    border: none;
+    border-radius: 4px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    display: none;
+    padding: 0 10px;
+}
+.NavToggleIcon{
+    color: var(--OceanBlue);
+    font-size: 30px;
+}
+.navCloseBtn{
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+.NavCloseIcon{
+    color: var(--OceanBlue);
+    font-size: 20px;
+}
+
+
+/* Home section css start */
+.Intro {
+    color: var(--DarkBackground);
+}
+
+.cardBubble {
+    padding: 30px;
+    margin-right: 50px;
+    background-image: linear-gradient(to right, #0ea6e9, #0bcfd2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px 0 40px 40px;
+    position: relative;
+}
+
+.cardBubble::after {
+    content: url('../image/Bubbble.svg');
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 99.99%;
+}
+
+.cardBubble p {
+    margin-bottom: 0;
+}
+
+.resumeStatus {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    align-items: center;
+}
+
+.resumeStatus strong {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 16px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.resumeStatus strong span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-radius: 50%;
+    background-color: #9aff91;
+}
+
+.resumeStatus strong span::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #9aff91;
+    animation: Wave 1.5s ease-in-out infinite both;
+}
+
+
+@keyframes Wave {
+    0% {
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 0.2;
+    }
+
+    100% {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+    }
+}
+
+.Home {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Home .row {
+    align-items: center;
+}
+
+.Profilepic1 {
+    padding-left: 20px;
+    position: relative;
+}
+
+.Profilepic1 img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    transform: translateY(-20%);
+}
+
+.Profilepic1::before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 8px solid #FFF962;
+    left: 10px;
+    top: -20px;
+}
+
+.Profilepic1::after {
+    content: "";
+    position: absolute;
+    width: 8%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    left: 50%;
+    top: -85px;
+}
+
+.Profilepic1 span {
+    display: inline-block;
+    position: absolute;
+    width: 4%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    left: 85%;
+    top: 100px;
+}
+
+.Profilepic1 span::after {
+    content: url('../image/Polygon.svg');
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/1;
+    left: -40px;
+    top: -180px;
+}
+
+/* Home section css End */
+
+/* aside menu css */
+
+.MenuWrap {
+    overflow-y: auto;
+    height: calc(100vh - 315px);
+    margin-right: -12px;
+}
+
+.MenuWrap::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.MenuWrap {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+aside {
+    padding: 15px;
+    background-color: var(--DarkBlue);
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 101;
+}
+
+
+aside .Profile2 {
+    display: block;
+    width: 60%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+aside .fourthH {
+    color: #fff;
+    margin-top: 16px;
+}
+
+aside .H2 {
+    font-size: 20px;
+    color: #8492AD;
+    text-align: center;
+}
+
+.socialMediaLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.socialMediaLinks a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0ea6e9, #0bcfd2, #0ea6e9) top center;
+    background-size: 100% 80px;
+    border-radius: 50%;
+    color: var(--DarkBackground);
+    font-size: 24px;
+    scale: 1;
+    transition: background-position-y 0.3s ease-in-out, color 0.5s ease-in-out;
+}
+
+.socialMediaLinks a:hover {
+    background-position-y: -100%;
+    color: #fff;
+}
+
+.socialMediaLinks a:active {
+    scale: 0.9;
+}
+
+#simple-list-example {
+    overflow-y: auto;
+    max-height: 100%;
+    position: relative;
+    padding: 25px 0;
+    gap: 0 !important;
+}
+
+#simple-list-example::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* scrollbar for IE, Edge and Firefox */
+#simple-list-example {
+    scrollbar-width: 5px;
+    /* Firefox */
+}
+
+#simple-list-example::-webkit-scrollbar-thumb {
+    background: #0bcfd218;
+    border-radius: 50px;
+}
+
+#simple-list-example a img,
+.About ul li img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+#simple-list-example a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+    padding: 15px !important;
+    padding-left: 40px !important;
+}
+
+#simple-list-example a:hover {
+    color: var(--SkyBlue);
+}
+
+
+.NavActive {
+    position: absolute;
+    height: 57px;
+    width: 270px;
+    background-color: var(--DarkBackground);
+    right: 0;
+    border-radius: 40px 0 0 40px;
+    z-index: -1;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+#simple-list-example a:nth-child(1).active~.NavActive {
+    transform: translateY(calc(1* 1px));
+    opacity: 1;
+}
+
+#simple-list-example a:nth-child(2).active~.NavActive {
+    transform: translateY(calc(56.5* 1px));
+    opacity: 1;
+}
+
+#simple-list-example a:nth-child(3).active~.NavActive {
+    transform: translateY(calc(56.5* 2px));
+    opacity: 1;
+}
+
+#simple-list-example a:nth-child(4).active~.NavActive {
+    transform: translateY(calc(56.5* 3px));
+    opacity: 1;
+}
+
+#simple-list-example a:nth-child(5).active~.NavActive {
+    transform: translateY(calc(56.5* 4px));
+    opacity: 1;
+}
+#simple-list-example a:nth-child(6).active~.NavActive {
+    transform: translateY(calc(56.5* 5px));
+    opacity: 1;
+}
+
+.NavActive::after {
+    content: url('../image/NavActive.svg');
+    position: absolute;
+    height: 18.5px;
+    width: 20px;
+    bottom: 100%;
+    right: 0px;
+}
+
+.NavActive::before {
+    content: url('../image/NavActive.svg');
+    position: absolute;
+    height: 18.2px;
+    width: 20px;
+    top: 100%;
+    right: 0px;
+    transform: rotateX(180deg);
+}
+
+/* aside menu css End*/
+
+/* About section css Start */
+
+.About {
+    color: #fff;
+}
+
+.About ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    row-gap: 24px;
+    list-style: none;
+    margin: 24px 0;
+    padding: 0;
+}
+
+.About ul li {
+    flex-basis: 235px;
+}
+
+.About .secH {
+    margin-bottom: 34px;
+}
+
+.About a.Mybtn:nth-of-type(2) {
+    margin-left: 34px;
+}
+
+.About .col-lg-8 {
+    padding-left: 40px
+}
+
+.AboutTextCard {
+    padding: 40px;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(270deg, rgba(11, 207, 210, 0.30) 0%, rgba(14, 166, 233, 0.30) 100%);
+    backdrop-filter: blur(4px);
+}
+
+.About .row {
+    align-items: center;
+}
+
+
+/* About section css End */
+
+/* project section css start  */
+
+.Projects>.row {
+    row-gap: 24px;
+}
+
+.Projects img[alt="Mockup Background"] {
+    border-radius: 20px;
+}
+
+.textDecore {
+    text-align: center;
+    text-shadow: 2px 4px 2px #1C2F55;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--DarkBlue);
+    font-size: 100px;
+    color: var(--DarkBackground);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.textDecore span {
+    position: absolute;
+    font-size: 45px;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    text-shadow: none;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+    text-transform: capitalize;
+}
+
+.wrap1 {
+    position: relative;
+    isolation: isolate;
+}
+
+.wrap1 a,
+.wrap2 a,
+.wrap3 a,
+.wrap4 a,
+.wrap5 a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrap1 .mockup1 {
+    position: absolute;
+    width: 47.9%;
+    height: 56.7%;
+    left: 17.8%;
+    top: 11.8%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wrap1 .mockup1 img,
+.wrap2 .mockup2 img,
+.wrap4 .mockup4 img {
+    position: relative;
+    top: 0%;
+    transition: all linear 5s;
+}
+
+.wrap1:hover .mockup1 img,
+.wrap2:hover .mockup2 img,
+.wrap3:hover .mockup3 img,
+.wrap4:hover .mockup4 img,
+.wrap5:hover .mockup5 img {
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+
+.wrap2 {
+    position: relative;
+    perspective: 1000px;
+    perspective-origin: left;
+}
+
+.wrap2 .mockup2 {
+    position: absolute;
+    width: 46.6%;
+    height: 44.4%;
+    left: 21.7%;
+    top: 17.4%;
+    transform: rotateY(16deg) rotateX(22deg) skewY(359deg);
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wrap3 {
+    position: relative;
+    perspective: 600px;
+    perspective-origin: center center;
+}
+
+.wrap3 .mockup3 {
+    position: absolute;
+    width: 21.6%;
+    height: 53.5%;
+    left: 37.3%;
+    top: 11.2%;
+    transform: rotate3d(1, 28, 4, 1deg) skew(343deg, 9deg);
+    transform-style: preserve-3d;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wrap3 .mockup3 img {
+    position: relative;
+    top: 0%;
+    transition: all linear 6s;
+}
+
+
+.wrap4 {
+    position: relative;
+}
+
+.wrap4 .mockup4 {
+    position: absolute;
+    width: 56.4%;
+    height: 44.3%;
+    left: 19.4%;
+    top: 30.6%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+
+.wrap5 {
+    position: relative;
+    perspective: 800px;
+    perspective-origin: center center;
+}
+
+.wrap5 .mockup5 {
+    position: absolute;
+    width: 36.9%;
+    height: 29.5%;
+    left: 53.3%;
+    top: 30%;
+    transform: rotateY(327deg) rotateX(19deg) skewY(6deg);
+    transform-style: preserve-3d;
+    transform-origin: bottom right;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wrap5 .mockup5 img {
+    position: relative;
+    top: 0%;
+    transition: all linear 2.5s;
+}
+
+/* project section css End  */
+
+/* Services section css start */
+.Services .therdH {
+    font-size: calc(24px + 0.390625vw)
+}
+
+.Services p {
+    font-size: calc(12px + 0.390625vw)
+}
+
+.Services .leftText {
+    background: url('../image/ServiceBackgroundLeft.svg') no-repeat left center;
+    background-size: contain;
+}
+
+.textpart {
+    color: #fff;
+    padding: 12%;
+}
+
+.Services>.row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Services .rightText {
+    padding-left: 22%;
+    padding-right: 10.8%;
+    background: url('../image/ServiceBackgroundRight.svg') no-repeat right center;
+    background-size: contain;
+}
+
+/* Services section css End */
+
+/* Skills section css Start */
+
+.Skills>p {
+    color: #fff;
+    text-align: center;
+    max-width: 936px;
+    margin: auto;
+}
+
+.Skills>.row {
+    justify-content: center;
+    gap: 5%;
+    margin-top: 42px;
+}
+
+.Skills .skillTockenWrap {
+    background: url('../image/SkillBackgroundBottum.svg') no-repeat center;
+    background-size: 100%;
+    position: relative;
+    isolation: isolate;
+}
+
+.InnerSkillwrap {
+    -webkit-backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(1.5px);
+    perspective: 1000px;
+}
+
+.SkillsIcon {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease-in-out;
+}
+
+.SkillsIcon[aria-label="Bootstrap5"] {
+    width: 60%;
+}
+
+.SkillsIcon[aria-label="Figma"] {
+    width: 36%;
+}
+
+.Skills img[alt="GreenDots"] {
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    left: 13%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.Skills img[alt="Leaf"] {
+    position: absolute;
+    width: 55%;
+    bottom: 0.5%;
+    left: 45.8%;
+    transition: all 1s ease-in-out;
+}
+
+.Skills .secH {
+    margin-bottom: 0;
+}
+
+
+.Skills .skillTockenWrap:hover img[alt="GreenDots"] {
+    transform: translate(98%, 18%) rotate(-95deg);
+}
+
+.Skills .skillTockenWrap:hover img[alt="Leaf"] {
+    animation: waving 1.5s ease-in-out infinite alternate both;
+}
+
+.Skills .skillTockenWrap:hover .SkillsIcon {
+    transform: translate(-50%, -50%) rotateY(360deg);
+    transform-style: preserve-3d;
+}
+
+@keyframes waving {
+    0% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-13%, -14%) rotate(-20deg);
+    }
+}
+
+/* Skills section css End */
+
+/* contact section css star */
+
+
+.Contacts>.row{
+    align-items: center;
+}
+.Contacts .backIllustraition {
+    background: url('../image/ThnksBackground.svg') no-repeat center center;
+    background-size: 100%;
+    padding: 0 4%;
+}
+
+.Contacts .circle {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid #ffffff1a;
+    background: linear-gradient(146deg, rgba(255, 255, 255, 0.10) 6.52%, rgba(255, 255, 255, 0.05) 93.48%);
+    box-shadow: -4px -4px 5px 0px rgba(255, 255, 255, 0.08) inset;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.Contacts .Thanks{
+    font-family: 'Arizonia';
+    font-size:  calc(9rem + 0.590625vw);
+    color: var(--SkyBlue);
+}
+.Contacts div.secH{
+    color: var(--DarkBackground);
+    padding: 0px 10%;
+    background: linear-gradient(90deg, #0EA6E9 0%, #0BCFD2 100%);
+    border-radius: 50px;
+}
+
+.Contacts form{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--DarkBlue);
+}
+.Contacts .form-label{
+    color: #fff;
+}
+.Contacts .form-control{
+    background-color: #172949;
+    min-height: 50px;
+    color: #fff;
+}
+.Contacts textarea.form-control{
+    min-height: 150px;
+    resize: none;
+   
+}
+.Contacts .col-lg-6 .col-md-6:nth-child(1),.Contacts .col-lg-6 .col-md-6:nth-child(2){
+margin-top: 0;
+}
+.Contacts .Mybtn{
+    display: table;
+    margin: auto;
+}
+
+.ContactInfo {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 42px 0 24px;
+}
+.ContactInfo .col-auto a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+}
+.ContactInfo .col-auto a:hover{
+    color: var(--SkyBlue);
+}
+.ContactInfo .col-auto{
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #172949;
+}
+.ContactInfo .col-auto a i{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0ea6e9, #0bcfd2, #0ea6e9) top center;
+    background-size: 100% 80px;
+    border-radius: 50%;
+    color: var(--DarkBackground);
+    font-size: 24px;
+    scale: 1;
+    transition: background-position-y 0.3s ease-in-out, color 0.5s ease-in-out;
+}
+
+.ContactInfo .col-auto a:hover i{
+    background-position-y: -100%;
+    color: #fff;
+}
+
+.ContactInfo .col-auto a:active i{
+    scale: 0.9;
+}
+.ContactInfo .socialMediaLinks{
+    margin-top: 0;
+}
+
+/* contact section css End */
