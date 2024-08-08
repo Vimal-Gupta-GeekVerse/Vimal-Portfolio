@@ -25,6 +25,11 @@
 }
 
 @media only screen and (max-width: 1280px) {
+    #typing::after{
+        height: 40px;
+        width: 3px;
+      }
+
     aside {
         position: fixed;
         left: 0;
@@ -75,6 +80,12 @@
 }
 
 @media (max-width: 1199.98px) {
+
+    #typing::after{
+        height: 32px;
+        width: 3px;
+      }
+
     .secH {
         font-size: 30px;
     }
@@ -258,8 +269,13 @@
         font-size: 2rem;
     }
 
+    #typing::after{
+        height: 28px;
+        width: 3px;
+      }
+
     .secH {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .therdH {
@@ -314,6 +330,11 @@
 }
 
 @media (max-width: 430px) {
+
+    #typing::after{
+        width: 2px;
+      }
+
     .Home>.row {
         flex-direction: column-reverse;
         row-gap: 15px;
@@ -353,12 +374,6 @@
     .Services .textpart {
         border-radius: 30px;
     }
-
-}
-
-
-
-@media (max-width: 430px) {
     .About a.Mybtn:nth-of-type(2) {
         margin-left: 0;
     }
@@ -376,5 +391,6 @@
     .ContactInfo .col-auto:not(.ContactInfo .col-auto.socialMediaLinks) {
         width: 100%;
     }
-
 }
+
+
