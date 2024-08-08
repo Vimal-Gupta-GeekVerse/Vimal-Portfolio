@@ -267,6 +267,40 @@ main {
     margin-bottom: 0;
 }
 
+
+/* Typing animation css start */
+
+#typing{
+    position: relative;
+   }
+
+#typing::after{
+    content: "";
+    display: inline-block;
+    height: 50px;
+    width: 4px;
+    margin-left: 2px;
+    background-color: var(--DarkBackground);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+#typing::after{
+    animation: blink1 1000ms linear infinite both;
+  }
+
+  @keyframes blink1 {
+    0%,75%,24%{
+      opacity: 1;
+    }
+   
+    25%,74%{
+      opacity: 0;
+    }
+  } 
+/* Typing animation css End */
+
 .resumeStatus {
     display: flex;
     flex-wrap: wrap;
@@ -1059,3 +1093,6 @@ margin-top: 0;
 }
 
 /* contact section css End */
+
+
+

@@ -73,7 +73,9 @@
               <div class="col-lg-8 Intro">
                 <div class="cardBubble">
                   <h1 class="display-3">Vimal Chandra Gupta</h1>
-                  <h2 class="secH ">A Web Designer</h2>
+
+                  <h2 class="secH content" id="typing">A Web Designer</h2>
+
                   <p>I have a keen interest in creating engaging interactions and animations for websites and visually
                     appealing to the user as wel as Proficiency in HTML/CSS and responsive design principles.
                     Proficiency using different design tools such as, but not limited to, Adobe Creative
@@ -362,7 +364,7 @@
           <!-- contact section start -->
           <section class="Contacts DefaultPadding" id="simple-list-item-6">
             <h2 class="secH textDecore">Gey in touch<span class="wow pushReleaseFrom">Contact Me</span></h2>
-           
+
             <div class="row">
               <div class="col-lg-6 backIllustraition">
                 <div class="circle">
@@ -385,13 +387,13 @@
 
                   <div class="col-md-6">
                     <label for="validationCustomUsername" class="form-label">Email</label>
-                    
-                      <input type="text" class="form-control " id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required>
-                      <div class="invalid-feedback">
-                        Please enter a Email.
-                      </div>
-                   
+
+                    <input type="text" class="form-control " id="validationCustomUsername"
+                      aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please enter a Email.
+                    </div>
+
                   </div>
 
                   <div class="col-md-6">
@@ -408,7 +410,8 @@
                   </div>
                   <div class="mb-3">
                     <label for="validationTextarea" class="form-label">Message</label>
-                    <textarea class="form-control" id="validationTextarea" placeholder="Type your message" required></textarea>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Type your message"
+                      required></textarea>
                     <div class="invalid-feedback">
                       Please enter a message in the textarea.
                     </div>
@@ -426,7 +429,8 @@
                 <a target="_blank" href="tel:9198782842"><i class="fa-solid fa-phone"></i>9198782842</a>
               </div>
               <div class="col-auto">
-                <a target="_blank" href="mailto:vimalchandragupta3@gmail.com"><i class="fa-solid fa-envelope"></i>vimalchandragupta3@gmail.com</a>
+                <a target="_blank" href="mailto:vimalchandragupta3@gmail.com"><i
+                    class="fa-solid fa-envelope"></i>vimalchandragupta3@gmail.com</a>
               </div>
               <div class="col-auto socialMediaLinks">
                 <a target="_blank" href="https://github.com/Vimal-Gupta-GeekVerse?tab=repositories"><i
@@ -460,6 +464,7 @@
   <script src="js/owl.carousel.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
+
   <script>
     new WOW().init();
 
@@ -481,6 +486,52 @@
         }, false)
       })
     })()
+
+
+    // Typing animation javascript start
+    const words = [ 'UI/UX Designer. ', 'Web Developer. ', 'Creative Person. '];
+    let index = 0;
+    const paragraph = document.getElementById('typing');
+    const staticText = "A&nbsp;";
+
+    function typeWord() {
+      const word = words[index];
+      let i = 0;
+
+      function type() {
+        if (i < word.length) {
+          paragraph.innerHTML = staticText + `<span>${word.substring(0, i)}`;
+          i++;
+          setTimeout(type, 100);
+        } else {
+          setTimeout(eraseWord, 2000);
+        }
+      }
+
+      type();
+    }
+
+    function eraseWord() {
+      let i = words[index].length;
+
+      function erase() {
+        if (i >= 0) {
+          paragraph.innerHTML = staticText + `<span>${words[index].substring(0, i)}`;
+          i--;
+          setTimeout(erase, 100);
+        } else {
+          index = (index + 1) % words.length;
+          setTimeout(typeWord, 1000);
+        }
+      }
+
+      erase();
+    }
+
+    typeWord();
+
+    // Typing animation javascript End
+
   </script>
 </body>
 
