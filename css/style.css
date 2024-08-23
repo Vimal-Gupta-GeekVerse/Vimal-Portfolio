@@ -379,6 +379,9 @@ main {
 .Profilepic1 img {
     display: block;
     width: 90%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
     margin-left: auto;
     transform: translateY(-20%);
 }
